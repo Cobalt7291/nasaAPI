@@ -10,3 +10,4 @@ function POTD () {
         .then(data => console.log(data));
     //Jacobs API key = YXG9udc8M5QLeqooH25qwm8pkJ7FE4wRikvXk2hL
 }
+
