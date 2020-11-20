@@ -13,6 +13,7 @@ function POTD () {
         .then(response => response.json())
         .then(data => {
             console.log(data)
+            console.log(potd);
 
             var potd = data.url;
             // var imgClass = document.createElement('img');
