@@ -1,6 +1,8 @@
-// function DOMLoaded () {
-POTD();
-// }
+
+$(document).ready(function() {
+    POTD();
+     //Jacobs API key = YXG9udc8M5QLeqooH25qwm8pkJ7FE4wRikvXk2hL
+
 
 function POTD() {
   // const POTD_DIV = document.getElementById("pic-of-day");
@@ -24,9 +26,11 @@ function POTD() {
         alt: 'NASA Photo of the Day',
       });
 
-      // POTD_DIV.appendChild(imgClass);
-      $POTD_DIV.append(imgClass);
-    });
-  // .then(data => console.log(data.url));
-  //Jacobs API key = YXG9udc8M5QLeqooH25qwm8pkJ7FE4wRikvXk2hL
+            
+
+            $POTD_DIV.append(imgClass);
+            
+        })
+         
 }
+});
