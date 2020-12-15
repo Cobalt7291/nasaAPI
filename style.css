@@ -43,3 +43,8 @@ body {
   letter-spacing: 2px;
   font-weight: bold;
 }
+
+.mars-image {
+  width: 45%;
+  height: auto;
+}
