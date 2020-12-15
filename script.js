@@ -5,8 +5,9 @@ $(document).ready(function() {
 
 
 function POTD() {
-  // const POTD_DIV = document.getElementById("pic-of-day");
+  
   const $POTD_DIV = $('#pic-of-day');
+  // const logoHead = "https://openclipart.org/download/321582/alien-head-silhouette.svg"
 
   queryURL =
     'https://api.nasa.gov/planetary/apod?&api_key=YXG9udc8M5QLeqooH25qwm8pkJ7FE4wRikvXk2hL';
@@ -14,13 +15,10 @@ function POTD() {
   fetch(queryURL)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      console.log(potd);
-
+      
       var potd = data.url;
-      // var imgClass = document.createElement('img');
       var imgClass = $('<img>');
-      // imgClass.setAttributes({
+    
       imgClass.attr({
         src: potd,
         alt: 'NASA Photo of the Day',
