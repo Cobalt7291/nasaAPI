@@ -13,6 +13,7 @@ $(document).ready(function () {
 
         imgClass.attr({
           src: potd,
+          class: 'size',
           alt: 'NASA Photo of the Day',
         });
         $POTD_DIV.append(imgClass);
